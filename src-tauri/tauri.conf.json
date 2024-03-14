@@ -6,8 +6,8 @@
     "distDir": "../dist"
   },
   "package": {
-    "productName": "text-recover",
-    "version": "0.0.0"
+    "productName": "TextRecover",
+    "version": "1.0.0"
   },
   "tauri": {
     "allowlist": {
@@ -19,9 +19,9 @@
     },
     "windows": [
       {
-        "title": "text-recover",
+        "title": "Text Recover",
         "width": 800,
-        "height": 600
+        "height": 800
       }
     ],
     "security": {
@@ -30,7 +30,7 @@
     "bundle": {
       "active": true,
       "targets": "all",
-      "identifier": "com.tauri.dev",
+      "identifier": "com.taurusxin.text-recover",
       "icon": [
         "icons/32x32.png",
         "icons/128x128.png",

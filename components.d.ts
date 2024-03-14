@@ -7,7 +7,7 @@ export {}
 
 declare module 'vue' {
   export interface GlobalComponents {
-    Greet: typeof import('./src/components/Greet.vue')['default']
+    NConfigProvider: typeof import('naive-ui')['NConfigProvider']
     NInput: typeof import('naive-ui')['NInput']
     NTable: typeof import('naive-ui')['NTable']
   }

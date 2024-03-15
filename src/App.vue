@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { ref } from 'vue'
+import { ref, computed } from 'vue'
 import { codecs } from '@/utils/codecs.ts'
 import { EncodingConverter } from '@/utils/converter'
 import { useOsTheme, darkTheme } from 'naive-ui'
@@ -28,7 +28,7 @@ const handleTextInput = (text: string) => {
       <n-input
         v-model:value="content"
         type="textarea"
-        placeholder="请输入待转换的乱码文本"
+        placeholder="请输入待恢复的乱码文本"
         clearable
         class="input"
         @input="handleTextInput"
@@ -55,8 +55,6 @@ const handleTextInput = (text: string) => {
 
 <style scoped lang="less">
 .container {
-  // disable selection
-  user-select: none;
   padding: 0.8rem;
 
   .input {
